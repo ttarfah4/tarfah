@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x, i, min, secondmin;
+ cin >> x;
+ min = x;
+ secondmin = min;
+ for (i = 1; i < 10; i++)
+ {
+ cin >> x;
+ if (x<min)
+ min = x;
+ else if (x < secondmin)
+ secondmin = x;
+ }
+ cout << " smallest is: " << min << endl;
+ cout << " second smallest is: " << secondmin << endl;
+ system("pause");
+ return 0;
+}
